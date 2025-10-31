@@ -1,5 +1,5 @@
 # Používáme oficiální base image pro HA add-ony
-FROM ghcr.io/home-assistant/base-python:3.12
+FROM ghcr.io/home-assistant/amd64-base:latest
 
 # Instalace závislostí
 RUN pip install requests paho-mqtt
