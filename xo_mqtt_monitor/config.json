@@ -1,0 +1,35 @@
+{
+  "name": "XCP-ng / XO MQTT Monitor",
+  "version": "1.0.0",
+  "slug": "xo_mqtt_monitor",
+  "description": "Získává metriky z Xen Orchestra API a publikuje je do Home Assistantu přes MQTT.",
+  "arch": ["amd64", "armhf", "armv7", "aarch64"],
+  "startup": "before",
+  "boot": "auto",
+  "map": ["config:rw"],
+  "options": {
+    "xo_url": "http://192.168.1.100:80",
+    "xo_user": "uzivatelske_jmeno",
+    "xo_pass": "vase_heslo",
+    "host_uuid": "fill_your_xcpng_host_uuid",
+    "mqtt_broker": "core-mosquitto",
+    "mqtt_port": 1883,
+    "mqtt_user": "homeassistant",
+    "mqtt_pass": "HA_MQTT_PASSWORD",
+    "base_topic": "xcpng/host/main",
+    "interval": 30
+  },
+  "schema": {
+    "xo_url": "str",
+    "xo_user": "str",
+    "xo_pass": "str",
+    "host_uuid": "str",
+    "mqtt_broker": "str",
+    "mqtt_port": "int",
+    "mqtt_user": "str",
+    "mqtt_pass": "str",
+    "base_topic": "str",
+    "interval": "int"
+  },
+  "host_network": true 
+}
