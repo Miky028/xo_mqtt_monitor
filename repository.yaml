@@ -1,0 +1,18 @@
+name: XCP-ng / XO Custom Add-ons
+url: https://github.com/Miky028/xo_mqtt_monitor
+maintainer: AI
+
+addons:
+  - name: XCP-ng / XO MQTT Monitor
+    slug: xo_mqtt_monitor
+    description: Získává metriky z Xen Orchestra API a publikuje je do Home Assistantu přes MQTT.
+    version: "1.0.0"
+    arch:
+      - amd64
+      - armhf
+      - armv7
+      - aarch64
+    url: https://github.com/Miky028/xo_mqtt_monitor/tree/main/xo_mqtt_monitor
+    startup: before
+    boot: auto
+    panel_icon: mdi:server-network
