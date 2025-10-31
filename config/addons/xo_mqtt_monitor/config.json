@@ -9,8 +9,8 @@
   "map": ["config:rw"],
   "options": {
     "xo_url": "http://192.168.1.100:80",
-    "xo_user": "readonly_user",
-    "xo_pass": "supersecret",
+    "xo_user": "uzivatelske_jmeno",
+    "xo_pass": "vase_heslo",
     "host_uuid": "fill_your_xcpng_host_uuid",
     "mqtt_broker": "core-mosquitto",
     "mqtt_port": 1883,
