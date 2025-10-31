@@ -1,6 +1,6 @@
 {
   "name": "XCP-ng / XO MQTT Monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "xo_mqtt_monitor",
   "description": "Získává metriky z Xen Orchestra API a publikuje je do Home Assistantu přes MQTT.",
   "arch": ["amd64", "armhf", "armv7", "aarch64"],
